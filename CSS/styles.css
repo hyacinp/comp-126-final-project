@@ -1,0 +1,213 @@
+.contact-main {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+  }
+  
+  .mailing-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .contact-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .contact-h1 {
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4a4a4a;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-h2{
+    font-family: "Arsenal SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #4a4a4a;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+  }
+  
+  
+  
+  .mailing-form, .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .mailing-form .form-group, .contact-form .form-group {
+    width: 100%;
+  }
+  
+  .mailing-form input[type="email"],
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .mailing-form input[type="email"]:focus,
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form input[type="tel"]:focus,
+  .contact-form textarea:focus {
+    border-color: #de303b;
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 150px;
+  }
+  
+  button {
+    background-color: #e21c2a; 
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: green;
+    transform: translateY(-5px);
+  }
+
+
+  @media (min-width: 768px) {
+    .contact-main {
+      flex-direction: row; 
+      align-items: flex-start;
+      justify-content: center; 
+      max-width: 100%;
+      height: auto; 
+    }
+  
+    .contact-container, .mailing-container {
+      width: 48%; 
+      margin-bottom: 0; 
+    }
+  
+    .mailing-container {
+      margin-right: 4%; 
+    }
+  }
+.footer{
+    background-color: #ccc;
+}
+  .footer img{
+    width:3%;
+    height:auto;
+  }
+
+
+
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+  }
+  
+  .gallery-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-y: auto;
+  }
+  
+  .gallery-h1 {
+    font-size: 32px;
+    color: #f52d3a; 
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .gallery-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  
+  
+  .gallery-images {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  @media (min-width: 768px) {
+    .gallery-images {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+      gap: 20px;
+    }
+  }
