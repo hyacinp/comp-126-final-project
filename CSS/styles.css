@@ -211,3 +211,305 @@
       gap: 20px;
     }
   }
+
+/* home page css */
+
+#home-body, h1, h2, h3, p, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#home-body {
+  font-family: "Arsenal SC", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #ADD8E6;
+}
+
+header{
+  background-color: #B22222;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+  font-size: 1.8em;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  color: white;
+}
+
+nav ul li{
+  color: white;
+  text-decoration: none;
+  display: inline;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  display: inline;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.tagline {
+  text-align: center;
+  background-color: #0F9D76;
+  color: white;
+  padding: 20px 10px;
+  margin: 20px auto;
+  font-style: italic;
+  font-size: 1.2em;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contents{
+  display: block;
+}
+
+.sidebar {
+  background-color: rgb(195, 190, 190);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-top: 3px solid white;
+
+}
+
+.sidebar h3 {
+  color: #0F9D76;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style-type: square;
+  margin-bottom: 10px;
+  color: #B22222;
+}
+
+.main-content{
+  padding: 20px;
+}
+
+.main-content img{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 4px 6px white;
+    border: 1px solid white;
+}
+
+.main-content h4 {
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: -10px;
+}
+#home-footer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #B22222; 
+  color: white; 
+  padding: 20px;
+  text-align: center; 
+}
+
+#home-footer img {
+  width: 50px; 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.home-footer-links {
+  display: flex;
+  gap: 15px; 
+}
+
+.home-footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-footer-links a:hover {
+  text-decoration: underline; 
+}
+
+@media (min-width: 768px) {
+  .contents {
+    display: flex;
+  }
+  .sidebar {
+    flex: 1;
+    margin-bottom: 0;
+    border-right: 1px solid #ccc;
+    min-width: 250px;
+  }
+  .main-content {
+    flex: 3;
+  }
+
+  .tagline {
+    max-width: 800px;
+    font-size: 1.3em;
+  }
+}
+
+/* About page CSS */
+#about-body {
+  font-family: "Arsenal SC", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ADD8E6 ;
+
+}
+
+.about-us {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-content {
+  display:flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #0F9D76;
+  border-radius: 10px;
+  color: white;
+  margin-top: 20px;
+}
+
+.about-text{
+  max-width: 600px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.team-section{
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.team-section h3 {
+  text-decoration: underline;
+}
+
+.team{
+  display: flex; 
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.maggie, .kibby, .molly {
+  text-align: center;
+}
+
+.maggie img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.molly img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.kibby img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.maggie p1 {
+  margin-top: 10px;
+  font-weight: bold;;
+}
+.molly p1 {
+  margin-top: 10px;
+  font-weight: bold;;
+}
+.kibby p1 {
+  margin-top: 10px;
+  font-weight: bold;;
+}
+
+.group-image img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .team {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+#about-footer {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #B22222; 
+  color: white; 
+  padding: 20px;
+  text-align: center; 
+}
+
+#about-footer img {
+  width: 50px; 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.about-footer-links {
+  display: flex;
+  gap: 15px; 
+}
+
+.about-footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-footer-links a:hover {
+  text-decoration: underline; 
+}
+
+
