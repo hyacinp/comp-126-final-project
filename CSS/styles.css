@@ -1,15 +1,20 @@
+.contact-body{
+  background-color: #ADD8E6;
+}
+
 .contact-main {
     font-family: "Arsenal SC", sans-serif;
     font-weight: 400;
     font-style: normal;;
     background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #ADD8E6;
+    
    
   }
   
@@ -22,7 +27,7 @@
     max-width: 500px;
     width: 100%;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 130px;
   }
   .contact-container {
     background-color: #fff;
@@ -33,6 +38,7 @@
     max-width: 500px;
     width: 100%;
     margin-bottom: 20px;
+    margin-top: 130px;
   }
   
   .contact-h1 {
@@ -52,6 +58,20 @@
     font-size: 24px;
     margin-bottom: 20px;
 
+  }
+  .contact-tagline {
+    text-align: center;
+    background-color: #0F9D76;
+    color: white;
+    padding: 30px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 1.2em;
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   
@@ -132,19 +152,44 @@
       margin-right: 4%; 
     }
   }
-.footer{
-    background-color: #ccc;
+#contact-footer{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #B22222; 
+  color: white; 
+  padding: 20px;
+  text-align: center;
+  margin-top:150px ;
 }
-  .footer img{
-    width:3%;
-    height:auto;
-  }
+#contact-footer img{
+width: 50px; 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.contact-footer-links {
+  display: flex;
+  gap: 15px; 
+}
+
+.contact-footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-footer-links a:hover {
+  text-decoration: underline; 
+}
+
 
 
 
   body {
     font-family: "Arial", sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ADD8 ;
     margin: 0;
     padding: 0;
     color: #4a4a4a;
@@ -211,6 +256,39 @@
       gap: 20px;
     }
   }
+
+  #gallery-footer{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #B22222; 
+    color: white; 
+    padding: 20px;
+    text-align: center;
+    margin-top:150px ;
+  }
+  #gallery-footer img{
+  width: 50px; 
+    height: auto;
+    margin-bottom: 10px; 
+  }
+  
+  .gallery-footer-links {
+    display: flex;
+    gap: 15px; 
+  }
+  
+  .gallery-footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .gallery-footer-links a:hover {
+    text-decoration: underline; 
+  }
+  
 
 /* home page css */
 
