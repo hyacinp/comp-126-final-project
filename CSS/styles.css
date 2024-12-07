@@ -189,7 +189,7 @@ width: 50px;
 
   body {
     font-family: "Arial", sans-serif;
-    background-color: #ADD8 ;
+    background-color: #ADD8E6 ;
     margin: 0;
     padding: 0;
     color: #4a4a4a;
@@ -209,8 +209,8 @@ width: 50px;
   }
   
   .gallery-h1 {
-    font-size: 32px;
-    color: #f52d3a; 
+    font-size: 32px; 
+    color: #B22222; 
     margin-bottom: 10px;
     text-align: center;
   }
