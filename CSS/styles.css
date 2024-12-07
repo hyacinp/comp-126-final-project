@@ -533,5 +533,143 @@ nav ul li a:hover {
   text-decoration: underline; 
 }
 
+/* What We Sell css */ 
 
+#products {
+  padding: 20px; 
+  background-color: #f8f8f8;
+  color: #333; 
+}
 
+#products h1 {
+  text-align: center; 
+  font-size: 2em; 
+  margin-bottom: 20px;
+  color: #b22222;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; 
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  padding: 15px; 
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.product-card img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  font-size: 1.5em; 
+  color: #006400; 
+  margin-bottom: 10px; 
+}
+
+.product-card p {
+  margin-bottom: 10px; 
+  font-size: 1em;
+}
+
+.product-card strong {
+  color: #b22222; 
+}
+
+/* News Css */
+#news {
+  padding: 20px; 
+}
+
+.news-item {
+  margin-bottom: 20px; 
+  padding: 10px; 
+  border: 1px solid #7f0606;
+  border-radius: 10px; 
+  background: #ecefee;
+  transition: transform 0.3s, box-shadow 0.2s; 
+}
+
+.news-item:hover {
+  transform: scale(1.0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+}
+
+.news-item h2 {
+  font-size: 1.5em; 
+  margin-bottom: 10px; 
+}
+
+.news-item time {
+  display: block; 
+  color: #666; 
+  margin-bottom: 15px; 
+}
+
+.news-item img {
+  max-width: 300px;
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 15px; 
+}
+
+.news-item li {
+  list-style-type:georgian;
+}
+
+@media (max-width: 768px) {
+  #news, #whatwesell {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .news-item, .product-item {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em; 
+  }
+
+  .news-img, .product-img {
+    border-radius: 6px; 
+  }
+}
+
+@media (max-width: 480px) {
+  #news, #whatwesell {
+    padding: 5px;
+  }
+
+  .news-item, .product-item {
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 1em; 
+  }
+
+  .news-img, .product-img {
+    margin-bottom: 10px; 
+  }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.4; 
+  }
+}
