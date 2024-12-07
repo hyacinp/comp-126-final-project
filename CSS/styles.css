@@ -1,7 +1,16 @@
+nav {
+  margin-right: 15px;
+}
+header h1 {
+  margin-left: 15px;
+}
 .contact-body{
   background-color: #ADD8E6;
 }
-
+.contact-header {
+  padding-top: 18px;
+  padding-bottom: 15px;
+}
 .contact-main {
     font-family: "Arsenal SC", sans-serif;
     font-weight: 400;
@@ -15,7 +24,6 @@
     height: 100vh;
     background-color: #ADD8E6;
     
-   
   }
   
   .mailing-container {
@@ -161,7 +169,7 @@
   color: white; 
   padding: 20px;
   text-align: center;
-  margin-top:150px ;
+  margin-top:125px ;
 }
 #contact-footer img{
 width: 50px; 
@@ -266,7 +274,7 @@ width: 50px;
     color: white; 
     padding: 20px;
     text-align: center;
-    margin-top:150px ;
+    margin-top:75px ;
   }
   #gallery-footer img{
   width: 50px; 
@@ -300,7 +308,6 @@ width: 50px;
 
 #home-body {
   font-family: "Arsenal SC", sans-serif;
-  line-height: 1.6;
   color: #333;
   background-color: #ADD8E6;
 }
@@ -308,10 +315,16 @@ width: 50px;
 header{
   background-color: #B22222;
   color: white;
-  padding: 10px 20px;
+  padding-top: 18px;
+  padding-bottom: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.home-header {
+  padding-top: 18px;
+  padding-bottom: 15px;
 }
 
 header h1{
@@ -356,6 +369,7 @@ nav ul li a:hover {
   max-width: 90%;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
 }
 
 .contents{
@@ -368,6 +382,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
   border-top: 3px solid white;
   margin-left: 30px;
+  line-height: 1.6;
 
 }
 
@@ -410,6 +425,11 @@ nav ul li a:hover {
   font-weight: bold;
   font-size: larger;
   padding-bottom: -10px;
+  line-height: 1.6;
+}
+
+.main-content p {
+  line-height: 1.6;
 }
 #home-footer {
   display: flex;
@@ -474,11 +494,6 @@ nav ul li a:hover {
 
 }
 
-.about-header {
-  padding-top: 18px;
-  padding-bottom: 15px;
-}
-
 
 .about-us {
   padding: 20px;
@@ -497,9 +512,10 @@ nav ul li a:hover {
   background-color: #0F9D76;
   border-radius: 10px;
   color: white;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-top: 40px;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-bottom: 40px;
 }
 
 .about-text{
@@ -588,6 +604,7 @@ nav ul li a:hover {
   color: white; 
   padding: 20px;
   text-align: center; 
+  margin-top: 75px;
 }
 
 #about-footer img {
@@ -613,10 +630,14 @@ nav ul li a:hover {
 
 /* What We Sell css */ 
 
+
 #products {
   padding: 20px; 
-  background-color: #f8f8f8;
+  background-color: #ADD8E6;
   color: #333; 
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 
 #products h1 {
@@ -630,6 +651,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px; 
+  margin-top: 50px;
 }
 
 .product-card {
@@ -667,13 +689,17 @@ nav ul li a:hover {
 
 .product-card strong {
   color: #b22222; 
-}
+} 
 
 /* News Css */
 #news {
   padding: 20px; 
+  margin-right: 50px;
+  margin-left: 50px;
 }
-
+#news h1 {
+  margin-bottom: 20px;
+}
 .news-item {
   margin-bottom: 20px; 
   padding: 10px; 
@@ -709,6 +735,71 @@ nav ul li a:hover {
 .news-item li {
   list-style-type:georgian;
 }
+#news-footer{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #B22222; 
+  color: white; 
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+#news-footer img{
+width: 50px; 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.news-footer-links {
+  display: flex;
+  gap: 15px; 
+}
+
+.news-footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-footer-links a:hover {
+  text-decoration: underline; 
+}
+
+
+#sell-footer{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #B22222; 
+  color: white; 
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px ;
+}
+#sell-footer img{
+width: 50px; 
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.sell-footer-links {
+  display: flex;
+  gap: 15px; 
+}
+
+.sell-footer-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sell-footer-links a:hover {
+  text-decoration: underline; 
+}
+
 
 @media (max-width: 768px) {
   #news, #whatwesell {
